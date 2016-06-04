@@ -3,12 +3,35 @@
 	"name": "GoTravian",
 	"version": "0.0.1",
 	"description": "GoTravian",
-	"author":  "Sanya",
-	"permissions": ["http://*/*", "unlimitedStorage"],
+	"author": "Sanya",
+	"permissions": [
+		"http://*/*",
+		"unlimitedStorage"
+	],
 	"short_name": "GT",
-	"content_scripts": [{
-		"js":[ "js/script.user.js" ],
-		"matches":[ "http://*.travian.com.ua/*" ],
-		"run_at":"document_end"
-	}]
+	"content_scripts": [
+		{
+			"js": [
+				"index.js"
+			],
+			"matches": ["http://*.travian.com.ua/*"],
+			"run_at": "document_end"
+		},
+		{
+			"js": [
+				"js/pages/dorf1.js",
+				"js/parser/dorf1.js"
+			],
+			"matches": ["http://*.travian.com.ua/dorf1.php*"],
+			"run_at": "document_end"
+		},
+		{
+			"js": [
+				"js/pages/dorf2.js",
+				"js/parser/dorf2.js"
+			],
+			"matches": ["http://*.travian.com.ua/dorf2.php*"],
+			"run_at": "document_end"
+		}
+	]
 }
