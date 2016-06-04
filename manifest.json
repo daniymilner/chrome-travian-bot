@@ -7,7 +7,7 @@
 	"permissions": ["http://*/*", "unlimitedStorage"],
 	"short_name": "GT",
 	"content_scripts": [{
-		"js":[ "script.user.js" ],
+		"js":[ "js/script.user.js" ],
 		"matches":[ "http://*.travian.com.ua/*" ],
 		"run_at":"document_end"
 	}]
