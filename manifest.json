@@ -11,9 +11,8 @@
 	"short_name": "GT",
 	"content_scripts": [
 		{
-			"js": [
-				"index.js"
-			],
+			"js": ["index.js"],
+			"css": ["css/general.css"],
 			"matches": ["http://*.travian.com.ua/*"],
 			"run_at": "document_end"
 		},
