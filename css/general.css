@@ -11,7 +11,7 @@ body{
 	width: 280px;
 	transform: translate3d(-290px, 0, 0);
 	transition: 0.5s ease-in-out;
-	border: 5px solid #866443;
+	border: 5px solid #CDB07D;
 }
 #travianBotPanel.active{
 	transform: translate3d(0, 0, 0);
@@ -22,23 +22,30 @@ body{
 	right: -30px;
 	width: 25px;
 	height: 100px;
-	background: #a62d00;
+	background: #911117;
 	cursor: pointer;
+	border-radius: 0 10px 10px 0;
 }
 #hrefLink{
-	color: #ffa200;
+	color: #fff;
+	background: #8EA93B;
 	position: absolute;
 	right: 5px;
-	border: 1px solid;
+	border: 1px solid #000;
 	padding: 3px;
 	margin-top: -20px;
 	display: block;
 }
 #travianBotBuildings ul li{
 	background: #f6f2e6;
+	padding: 8px 0 8px 15px;
+	margin: 0;
 }
 #travianBotBuildings ul li:nth-child(even){
 	background: #efecdb;
+}
+#travianBotBuildings ul li p{
+	margin: 0;
 }
 #travianBotBuildings ul{
 	display: flex;
@@ -56,9 +63,9 @@ body{
 	height: 500px;
 	background: #00733f;
 	color: #fff;
-	z-index: 0;
 	transform: translate3d(280px, 0, 0);
 	transition: 0.5s ease-in-out;
+	z-index: 1000000;
 }
 #travianBotTaskPanel.active{
 	transform: translate3d(0, 0, 0);

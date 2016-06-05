@@ -12,7 +12,7 @@
 		hrefLink = document.createElement('a');
 		hrefLink.href = mapElement.href;
 		hrefLink.alt = mapElement.alt;
-		hrefLink.innerText = 'Перейти';
+		hrefLink.innerText = 'Покращити';
 
 		hrefLink.id = 'hrefLink';
 		elementInnerP.appendChild(hrefLink);
