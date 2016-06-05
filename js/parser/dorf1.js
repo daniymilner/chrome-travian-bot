@@ -12,9 +12,9 @@
 		hrefLink = document.createElement('a');
 		hrefLink.href = mapElement.href;
 		hrefLink.alt = mapElement.alt;
-		hrefLink.innerText = 'Покращити';
-
+		hrefLink.innerHTML = '<img src="chrome-extension://klojagbmcmilfpjgcafbiknfmedggchi/img/up-arrow.png">';
 		hrefLink.id = 'hrefLink';
+
 		elementInnerP.appendChild(hrefLink);
 	}
 })();

@@ -8,10 +8,10 @@ body{
 	background: #fff;
 	color: #000;
 	z-index: 1000000;
-	width: 280px;
-	transform: translate3d(-290px, 0, 0);
+	width: 220px;
+	transform: translate3d(-230px, 0, 0);
 	transition: 0.5s ease-in-out;
-	border: 5px solid #CDB07D;
+	border: 5px solid #cdb07d;
 }
 #travianBotPanel.active{
 	transform: translate3d(0, 0, 0);
@@ -28,13 +28,15 @@ body{
 }
 #hrefLink{
 	color: #fff;
-	background: #8EA93B;
 	position: absolute;
 	right: 5px;
-	border: 1px solid #000;
 	padding: 3px;
 	margin-top: -20px;
 	display: block;
+}
+#hrefLink img{
+	width: 17px;
+	height: 17px;
 }
 #travianBotBuildings ul li{
 	background: #f6f2e6;
@@ -53,8 +55,6 @@ body{
 	padding: 0;
 	margin: 0 0;
 }
-
-
 #travianBotTaskPanel{
 	position: absolute;
 	top: 0;
