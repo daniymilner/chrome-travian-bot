@@ -14,6 +14,7 @@
 		hrefLink.alt = mapElement.alt;
 		hrefLink.innerText = 'Перейти';
 
+		hrefLink.id = 'hrefLink';
 		elementInnerP.appendChild(hrefLink);
 	}
 })();
