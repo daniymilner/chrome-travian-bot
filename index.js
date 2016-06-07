@@ -7,9 +7,35 @@
 	travianBotPanel.id = 'travianBotPanel';
 	travianBotTaskPanel.id = 'travianBotTaskPanel';
 	buildingsButton.id = 'buildingsButton';
+
+	checkAndActivate();
+
+	function checkAndActivate(){
+		if(window.storage.activePanel.isActive()){
+			activatePanel();
+		}else{
+			deactivatePanel();
+		}
+	}
+
+	function activatePanel(){
+		window.storage.activePanel.activate();
+		travianBotPanel.classList.add('active');
+		travianBotTaskPanel.classList.add('active');
+	}
+
+	function deactivatePanel(){
+		window.storage.activePanel.deactivate();
+		travianBotPanel.classList.remove('active');
+		travianBotTaskPanel.classList.remove('active');
+	}
+
 	buildingsButton.addEventListener('click', function(){
-		travianBotPanel.classList.toggle('active');
-		travianBotTaskPanel.classList.toggle('active');
+		if(travianBotPanel.classList.contains('active')){
+			deactivatePanel();
+		}else{
+			activatePanel();
+		}
 	});
 
 	travianBotPanel.appendChild(buildingsButton);
@@ -17,7 +43,6 @@
 	document.body.appendChild(travianBotTaskPanel);
 
 	background.addEventListener('click', function(){
-		travianBotPanel.classList.remove('active');
-		travianBotTaskPanel.classList.remove('active');
+		deactivatePanel();
 	});
 })();
