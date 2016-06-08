@@ -1,8 +1,7 @@
 (function(){
 	var travianBotPanel = document.createElement('div'),
 		buildingsButton = document.createElement('div'),
-		travianBotTaskPanel = document.createElement('div'),
-		background = document.getElementById('background');
+		travianBotTaskPanel = document.createElement('div');
 
 	travianBotPanel.id = 'travianBotPanel';
 	travianBotTaskPanel.id = 'travianBotTaskPanel';
@@ -41,8 +40,4 @@
 	travianBotPanel.appendChild(buildingsButton);
 	document.body.appendChild(travianBotPanel);
 	document.body.appendChild(travianBotTaskPanel);
-
-	background.addEventListener('click', function(){
-		deactivatePanel();
-	});
 })();

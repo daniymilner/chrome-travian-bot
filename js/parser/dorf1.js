@@ -1,7 +1,7 @@
 (function(){
 	var buildsStart = 1,
 		buildsEnd = 18,
-		element, mapElement, elementInnerP,
+		mapElement, elementInnerP,
 		hrefLink, buildObject;
 
 	function getBuildObject(str){
@@ -16,7 +16,6 @@
 		}
 	}
 	for(var i = buildsStart; i <= buildsEnd; i++){
-		element = document.getElementById('build_' + i);
 		elementInnerP = document.querySelector('#build_' + i + ' p');
 		mapElement = document.querySelector('area[href="build.php?id=' + i + '"]');
 		elementInnerP.innerHTML = mapElement.alt;

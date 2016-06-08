@@ -49,10 +49,43 @@
 				var list = this.list();
 				for(var i = 0; i < list.length; i++){
 					if(list[i].buildId === buildId){
-						list[i].level = parseInt(data.level);
+						if(parseInt(data.level)){
+							list[i].level = parseInt(data.level);
+						}
+						if(data.resources){
+							list[i].resources = data.resources;
+						}
 						this.__store(list);
 						break;
 					}
+				}
+			},
+			action: {
+				__key: 'taskListStatus',
+				start: function(){
+					localStorage.setItem(this.__key, 1);
+				},
+				stop: function(){
+					localStorage.setItem(this.__key, 0);
+				},
+				isProgress: function(){
+					return parseInt(localStorage.getItem(this.__key));
+				},
+				toggle: function(){
+					if(this.isProgress()){
+						this.stop();
+					}else{
+						this.start();
+					}
+				}
+			},
+			build: {
+				__key: 'currentBuildStep', //analyze, analyzeInBuild, start, build, finish
+				setStep: function(step){
+					localStorage.setItem(this.__key, step);
+				},
+				getCurrentStep: function(){
+					return localStorage.getItem(this.__key) || 'analyze';
 				}
 			}
 		},

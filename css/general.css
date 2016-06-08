@@ -85,3 +85,11 @@ body{
 #travianBotTaskPanel.active{
 	transform: translate3d(0, 0, 0);
 }
+#actionTaskButton{
+	width: 100px;
+	height: 30px;
+	background: green;
+}
+#actionTaskButton.active{
+	background: red;
+}
