@@ -34,34 +34,53 @@ body{
 	margin-top: -20px;
 	display: block;
 }
-#travianBotBuildings ul li{
+#travianBotBuildings ul li,
+#travianBotTaskPanel ul li{
 	background: #f6f2e6;
 	padding: 8px 0 8px 15px;
 	margin: 0;
 }
-#travianBotBuildings ul li:nth-child(even){
+#travianBotBuildings ul li:nth-child(even),
+#travianBotTaskPanel ul li:nth-child(even){
 	background: #efecdb;
 }
-#travianBotBuildings ul li p{
+#travianBotBuildings ul li p,
+#travianBotTaskPanel ul li p{
 	margin: 0;
 }
-#travianBotBuildings ul{
+#travianBotBuildings ul,
+#travianBotTaskPanel ul{
 	display: flex;
 	flex-direction: column;
 	padding: 0;
 	margin: 0 0;
+	list-style: none;
+}
+#travianBotTaskPanel ul li p img{
+	position: absolute;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+
+}
+#travianBotTaskPanel ul li p select{
+	position: absolute;
+	right: 40px;
 }
 #travianBotTaskPanel{
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 280px;
-	height: 500px;
-	background: #00733f;
-	color: #fff;
-	transform: translate3d(280px, 0, 0);
+	width: 220px;
+	background: #fff;
+	color: #000;
+	transform: translate3d(230px, 0, 0);
 	transition: 0.5s ease-in-out;
 	z-index: 1000000;
+	margin: 0;
+	padding: 0;
+	border: 5px solid #cdb07d;
 }
 #travianBotTaskPanel.active{
 	transform: translate3d(0, 0, 0);
