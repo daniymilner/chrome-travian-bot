@@ -109,3 +109,9 @@ body{
 	font-weight: bold;
 	font-size: 16px;
 }
+#contract{
+	margin-bottom: 5px !important;
+}
+#contract #addBuildingButton{
+	margin-top: 5px;
+}

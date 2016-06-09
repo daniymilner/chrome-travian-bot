@@ -36,6 +36,13 @@
 			],
 			"matches": ["http://*.travian.com.ua/dorf2.php*"],
 			"run_at": "document_end"
+		},
+		{
+			"js": [
+				"js/pages/build.js"
+			],
+			"matches": ["http://*.travian.com.ua/build.php?id=*"],
+			"run_at": "document_end"
 		}
 	],
 	"web_accessible_resources": [
