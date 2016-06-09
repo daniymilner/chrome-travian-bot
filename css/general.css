@@ -99,13 +99,12 @@ body{
 	content: 'Start';
 }
 #actionTaskButton.active{
-	background: grey;
+	background: #9a9a9a;
 }
 #actionTaskButton.active:before{
 	content: 'Stop';
 }
-#actionTaskButton:before,
-#actionTaskButton.active:before{
+#actionTaskButton:before{
 	color: #fff;
 	font-weight: bold;
 	font-size: 16px;

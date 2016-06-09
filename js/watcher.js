@@ -34,8 +34,6 @@
 		var button = document.querySelector('.green.build'),
 			levelToUpdate = parseInt(document.querySelector('.titleInHeader .level').innerText.split(' ')[1]);
 		if(!button.classList.contains('disabled')){
-			console.log(currentTask.level);
-			console.log(levelToUpdate);
 			if(currentTask.level === levelToUpdate + 1){
 				window.storage.tasks.remove(currentTask.buildId);
 			}else{
@@ -76,7 +74,6 @@
 	}
 
 	function compareResources(){
-		console.log('compareResources');
 		analyzeCurrentResources();
 		if((currentResources.wood > currentTask.resources.wood) &&
 			(currentResources.clay > currentTask.resources.clay) &&
@@ -91,7 +88,6 @@
 	}
 
 	function changeLocationByBuildingId(id){
-		console.log('changeLocationByBuildingId');
 		id = parseInt(id);
 		if(!id) return;
 		location.href = location.origin + '/build.php?id=' + id;
