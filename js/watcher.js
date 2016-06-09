@@ -32,11 +32,11 @@
 
 	function clickBuild(){
 		var button = document.querySelector('.green.build'),
-			levelToUpdate = document.querySelector('.titleInHeader .level').innerText.split(' ')[1];
+			levelToUpdate = parseInt(document.querySelector('.titleInHeader .level').innerText.split(' ')[1]);
 		if(!button.classList.contains('disabled')){
 			console.log(currentTask.level);
 			console.log(levelToUpdate);
-			if(currentTask.level === levelToUpdate){
+			if(currentTask.level === levelToUpdate + 1){
 				window.storage.tasks.remove(currentTask.buildId);
 			}else{
 				window.storage.tasks.updateByBuildId(currentTask.buildId, {level: currentTask.level + 1});
