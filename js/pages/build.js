@@ -23,7 +23,7 @@
 			level = parseInt(levelElement.innerText.trim().split(' ')[1]),
 			id = parseInt(location.search.replace('?id=','')),
 			nextLevel = level + 1;
-		window.storage.tasks.add(name, id, nextLevel, nextLevel, 10);
+		window.storage.tasks.add(name, id, nextLevel, nextLevel, 20);
 		location.reload();
 	});
 
