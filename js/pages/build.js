@@ -24,7 +24,7 @@
 			id = parseInt(location.search.replace('?id=','')),
 			nextLevel = level + 1;
 		window.storage.tasks.add(name, id, nextLevel, nextLevel, 20);
-		location.reload();
+		location.href = location.origin + '/dorf1.php';
 	});
 
 	contractWrapper.appendChild(addBuildingButton);
