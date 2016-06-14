@@ -16,15 +16,24 @@ body{
 #travianBotPanel.active{
 	transform: translate3d(0, 0, 0);
 }
-#buildingsButton{
+#buildingsButton,
+#taskBuildingsButton{
 	position: absolute;
 	top: -5px;
-	right: -30px;
 	width: 25px;
-	height: 100px;
-	background: #911117;
+	background: rgba(20, 142, 20, 0.9);
 	cursor: pointer;
+}
+#buildingsButton{
+	right: -30px;
+	height: 100px;
 	border-radius: 0 10px 10px 0;
+}
+#taskBuildingsButton{
+	left: -30px;
+	border-radius: 10px 0 0 10px;
+	height: 100%;
+	padding: 5px 0;
 }
 #hrefLink{
 	color: #fff;

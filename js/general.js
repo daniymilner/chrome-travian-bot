@@ -3,7 +3,7 @@
 		travianBotTaskPanel = document.createElement('div');
 
 	travianBotTaskPanel.id = 'travianBotTaskPanel';
-	buildingsButton.id = 'buildingsButton';
+	buildingsButton.id = 'taskBuildingsButton';
 
 	checkAndActivate();
 
