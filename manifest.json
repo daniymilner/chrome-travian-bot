@@ -12,7 +12,9 @@
 	"content_scripts": [
 		{
 			"js": [
-				"js/storage.js",
+				"js/storage/init.js",
+				"js/storage/tasks.js",
+				"js/storage/panel.js",
 				"js/general.js",
 				"js/task-list.js",
 				"js/watcher.js"
