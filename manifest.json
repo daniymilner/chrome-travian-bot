@@ -1,9 +1,8 @@
 {
 	"manifest_version": 2,
 	"name": "GoTravian",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "GoTravian",
-	"author": "Sanya",
 	"permissions": [
 		"http://*/*",
 		"unlimitedStorage"
@@ -15,6 +14,8 @@
 				"js/storage/init.js",
 				"js/storage/tasks.js",
 				"js/storage/panel.js",
+				"js/storage/village.js",
+				"js/parser/villages.js",
 				"js/general.js",
 				"js/task-list.js",
 				"js/watcher.js"

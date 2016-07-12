@@ -17,6 +17,7 @@
 			if(!saved){
 				taskList.push({
 					name: name,
+					village: window.storage.villages.getActive(),
 					buildId: buildId,
 					level: level,
 					min: min,
